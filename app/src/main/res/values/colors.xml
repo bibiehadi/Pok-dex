@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#F6E6BD</color>
+    <color name="secondary">#315A7B</color>
+    <color name="grass">#d5f68b</color>
+    <color name="grass2">#74cb48</color>
+    <color name="fire">#fc945c</color>
+    <color name="fire2">#F57D31</color>
+    <color name="water">#a4cdff</color>
+    <color name="water2">#6493eb</color>
+    <color name="electric">#f6e652</color>
+    <color name="electric2">#f9cf30</color>
+    <color name="poison">#a483c5</color>
+    <color name="poison2">#a43e9e</color>
+    <color name="ground">#8b6218</color>
+    <color name="ground2">#dec16b</color>
+    <color name="ice">#9ad6df</color>
+    <color name="fairy">#e69eac</color>
+    <color name="psychic">#fb5584</color>
+    <color name="steel">#b7b9d0</color>
+    <color name="ground_image">#4a3910</color>
+</resources>
