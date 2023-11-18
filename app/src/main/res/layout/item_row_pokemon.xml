@@ -18,8 +18,8 @@
         android:padding="8dp">
         <ImageView
             android:id="@+id/img_pokemon_photo"
-            android:layout_width="100dp"
-            android:layout_height="120dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:scaleType="centerCrop"
             card_view:layout_constraintBaseline_toBottomOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"

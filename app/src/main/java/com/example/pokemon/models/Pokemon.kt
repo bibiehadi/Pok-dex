@@ -9,6 +9,6 @@ data class Pokemon(
     val number: String,
     val type: String,
     val description: String,
-    val backgroundColor: Int,
-//    val photo: Int,
+    val photo: String,
+    val color: Int,
 ) : Parcelable

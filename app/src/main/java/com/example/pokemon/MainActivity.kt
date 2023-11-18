@@ -52,6 +52,7 @@ class MainActivity : AppCompatActivity() {
                 dataNumber[i] ?: "0",
                 dataType[i] ?: "",
                 dataDescription[i] ?: "",
+                dataPhoto[i],
                 color,
             )
             listPokemon.add(pokemon)
