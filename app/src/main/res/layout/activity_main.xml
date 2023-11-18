@@ -39,6 +39,14 @@
                 android:textSize="35sp"
                 />
         </LinearLayout>
+        <ImageView
+            android:id="@+id/img_menu"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/baseline_menu_24"
+            app:tint="@color/primary" />
         <EditText
             android:layout_width="0dp"
             android:layout_height="0dp"

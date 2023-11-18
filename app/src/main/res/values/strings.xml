@@ -4,6 +4,7 @@
     <string name="description">Deskripsi</string>
     <string name="list">List</string>
     <string name="grid">Grid</string>
+    <string name="profile">Profile</string>
     <string-array name="pokemon_name">
         <item>Charizard</item>
         <item>MeowTwo</item>
