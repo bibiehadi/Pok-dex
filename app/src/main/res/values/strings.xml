@@ -13,19 +13,19 @@
         <item>Charizard</item>
         <item>MeowTwo</item>
         <item>Pikachu</item>
-        <item>Bulbasaur</item>
+        <item>Arceus</item>
         <item>Raichu</item>
         <item>Eevee</item>
         <item>Articuno</item>
         <item>Jigglypuff</item>
         <item>Squirtle</item>
-        <item>Absol</item>
-        <item>Pidgey</item>
-        <item>Diglett</item>
-        <item>Lapras</item>
-        <item>Sandslash</item>
-        <item>Seadra</item>
-        <item>Scyther</item>
+        <item>Barbasaur</item>
+        <item>Charmander</item>
+        <item>Butterfree</item>
+        <item>Gasly</item>
+        <item>Ditto</item>
+        <item>Mew</item>
+        <item>Aron</item>
     </string-array>
     <string-array name="pokemon_description">
         <item>Charizard, known in Japan as Lizardon, is a Pokémon species in Nintendo and Game Freak\'s Pokémon franchise. Created by Ken Sugimori, Charizard first appeared in the video games Pokémon Red and Blue and subsequent sequels.</item>
@@ -49,19 +49,19 @@
         <item>fire</item>
         <item>psychic</item>
         <item>electric</item>
-        <item>grass</item>
+        <item>normal</item>
         <item>electric</item>
         <item>normal</item>
         <item>ice</item>
         <item>fairy</item>
         <item>water</item>
-        <item>dark</item>
-        <item>dark</item>
-        <item>dark</item>
-        <item>dark</item>
-        <item>dark</item>
-        <item>dark</item>
-        <item>dark</item>
+        <item>grass</item>
+        <item>fire</item>
+        <item>bug</item>
+        <item>ghost</item>
+        <item>normal</item>
+        <item>psychic</item>
+        <item>steel</item>
     </string-array>
     <string-array name="pokemon_photo">
         <item>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/6.png</item>
@@ -72,14 +72,14 @@
         <item>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/133.png</item>
         <item>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/448.png</item>
         <item>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/658.png</item>
-        <item>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/658.png</item>
-        <item>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/359.png</item>
-        <item>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/359.png</item>
-        <item>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/359.png</item>
-        <item>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/359.png</item>
-        <item>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/359.png</item>
-        <item>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/359.png</item>
-        <item>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/359.png</item>
+        <item>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/7.png</item>
+        <item>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1.png</item>
+        <item>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/4.png</item>
+        <item>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/12.png</item>
+        <item>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/92.png</item>
+        <item>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/132.png</item>
+        <item>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/151.png</item>
+        <item>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/304.png</item>
     </string-array>
     <string-array name="pokemon_number">
         <item>#006</item>
@@ -90,13 +90,13 @@
         <item>#133</item>
         <item>#448</item>
         <item>#658</item>
-        <item>#658</item>
-        <item>#359</item>
-        <item>#000</item>
-        <item>#000</item>
-        <item>#000</item>
-        <item>#000</item>
-        <item>#000</item>
-        <item>#000</item>
+        <item>#007</item>
+        <item>#001</item>
+        <item>#004</item>
+        <item>#012</item>
+        <item>#092</item>
+        <item>#132</item>
+        <item>#151</item>
+        <item>#304</item>
     </string-array>
 </resources>

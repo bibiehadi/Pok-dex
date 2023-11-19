@@ -44,7 +44,16 @@ class MainActivity : AppCompatActivity() {
         for(i in dataName.indices) {
             val color = when (dataType[i]) {
                 "fire" -> resources.getColor(R.color.fire)
-                "electric" -> resources.getColor(R.color.electric2)
+                "electric" -> resources.getColor(R.color.electric)
+                "psychic" -> resources.getColor(R.color.psychic)
+                "grass" -> resources.getColor(R.color.grass)
+                "normal" -> resources.getColor(R.color.steel)
+                "ice" -> resources.getColor(R.color.ice)
+                "fairy" -> resources.getColor(R.color.fairy)
+                "water" -> resources.getColor(R.color.water)
+                "bug" -> resources.getColor(R.color.grass2)
+                "ghost" -> resources.getColor(R.color.steel)
+                "steel" -> resources.getColor(R.color.steel)
                 else -> resources.getColor(R.color.ground)
             }
             val pokemon = Pokemon(
