@@ -38,8 +38,9 @@
 
             <ImageView
                 android:id="@+id/btn_back"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="2dp"
                 android:src="@drawable/baseline_arrow_back_24"
                 app:tint="@color/primary" />
 
@@ -50,7 +51,7 @@
                 android:paddingStart="8dp"
                 app:layout_constraintStart_toEndOf="@+id/btn_back"
                 app:layout_constraintTop_toTopOf="parent"
-                android:textSize="24sp"
+                android:textSize="26sp"
                 android:textStyle="bold"
                 android:textColor="@color/primary"
                 android:text="@string/pokemon_name"
@@ -64,7 +65,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:padding="20dp"
-            android:text="#000"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/pokemon_number"
             android:textSize="16sp"
             android:textColor="@color/white"
             android:textStyle="bold"
@@ -96,6 +98,27 @@
             app:layout_constraintTop_toBottomOf="@id/img_pokemon_photo"
             tools:text="Fire" />
 
+        <ImageView
+            android:id="@+id/img_action_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            app:layout_constraintEnd_toStartOf="@id/img_action_share"
+            app:layout_constraintBottom_toTopOf="@id/tv_description"
+            android:src="@drawable/baseline_favorite_border_24"
+            app:tint="@color/secondary"/>
+
+        <ImageView
+            android:id="@+id/img_action_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_description"
+            android:src="@drawable/baseline_share_24"
+            app:tint="@color/secondary" />
+
         <TextView
             android:id="@+id/tv_about"
             android:layout_width="wrap_content"
@@ -105,6 +128,7 @@
             app:layout_constraintTop_toBottomOf="@id/chip_pokemon_type"
             android:textSize="16dp"
             android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
             android:text="About"
             />
 
@@ -118,6 +142,8 @@
             app:layout_constraintTop_toBottomOf="@id/tv_about"
             android:textSize="16dp"
             android:textAlignment="center"
+            android:textColor="@color/secondary"
+            android:fontFamily="@font/poppins_medium"
             android:text="Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.example.pokemon/.MainActivity }"
             />
 

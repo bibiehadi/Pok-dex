@@ -101,7 +101,7 @@ class MainActivity : AppCompatActivity() {
             R.id.action_grid -> {
                 rvPokemons.layoutManager = GridLayoutManager(this,2)
             }
-            R.id.action_profile -> {
+            R.id.action_about_page -> {
                 val moveIntent = Intent(this@MainActivity, ProfileActivity::class.java)
                 startActivity(moveIntent)
             }

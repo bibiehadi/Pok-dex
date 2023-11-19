@@ -4,7 +4,11 @@
     <string name="description">Deskripsi</string>
     <string name="list">List</string>
     <string name="grid">Grid</string>
-    <string name="profile">Profile</string>
+    <string name="about">About</string>
+    <string name="email">bibie.hadi22@gmail.com</string>
+    <string name="github">\@bibiehadi</string>
+    <string name="profile_name">Bibie Hadi Kusuma</string>
+    <string name="pokemon_number">#000</string>
     <string-array name="pokemon_name">
         <item>Charizard</item>
         <item>MeowTwo</item>

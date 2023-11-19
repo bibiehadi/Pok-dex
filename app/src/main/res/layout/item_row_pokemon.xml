@@ -69,24 +69,24 @@
             />
         
         <ImageView
-            android:id="@+id/iv_share"
+            android:id="@+id/img_action_favorite"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            card_view:layout_constraintEnd_toStartOf="@id/iv_favorite"
+            card_view:layout_constraintEnd_toStartOf="@id/img_action_share"
             card_view:layout_constraintBottom_toBottomOf="parent"
             android:src="@drawable/baseline_favorite_border_24"
             card_view:tint="@color/secondary"/>
-        
+
         <ImageView
-            android:id="@+id/iv_favorite"
+            android:id="@+id/img_action_share"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="8dp"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintBottom_toBottomOf="parent"
             android:src="@drawable/baseline_share_24"
-            android:tint="@color/secondary"/>
+            card_view:tint="@color/secondary" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>

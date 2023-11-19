@@ -5,18 +5,18 @@
         android:id="@+id/action_list"
         android:title="@string/list"
         android:icon="@drawable/baseline_view_list_24"
-        android:iconTint="@color/primary"
+        android:iconTint="@color/secondary"
         app:showAsAction="never"/>
     <item
         android:id="@+id/action_grid"
         android:title="@string/grid"
         android:icon="@drawable/baseline_grid_view_24"
-        android:iconTint="@color/primary"
+        android:iconTint="@color/secondary"
         app:showAsAction="never"/>
     <item
-        android:id="@+id/action_profile"
+        android:id="@+id/action_about_page"
         android:icon="@drawable/baseline_search_24"
-        android:iconTint="@color/primary"
-        android:title="@string/profile"
+        android:iconTint="@color/secondary"
+        android:title="@string/about"
         app:showAsAction="never"/>
 </menu>

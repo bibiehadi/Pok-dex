@@ -18,10 +18,12 @@ class ListPokemonAdapter(private val listPokemon: ArrayList<Pokemon>): RecyclerV
         val tvName: TextView = itemView.findViewById(R.id.tv_pokemon_name)
         val tvNumber: TextView = itemView.findViewById(R.id.tv_pokemon_number)
         val chipType: Chip = itemView.findViewById(R.id.chip_pokemon_type)
-        val ivFavorite: ImageView = itemView.findViewById(R.id.iv_favorite)
+        val ivFavorite: ImageView = itemView.findViewById(R.id.img_action_favorite)
+        val ivShare: ImageView = itemView.findViewById(R.id.img_action_share)
     }
 
     private lateinit var onItemClickCallback: OnItemClickCallback
+    private lateinit var onItemShareClickCallback: OnItemShareClickCallback
 
     fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
         this.onItemClickCallback = onItemClickCallback
@@ -35,23 +37,31 @@ class ListPokemonAdapter(private val listPokemon: ArrayList<Pokemon>): RecyclerV
     override fun getItemCount(): Int = listPokemon.size
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val (name, number, type, description, photo, color) = listPokemon[position]
+        val (name, number, typePokemon, description, photo, color) = listPokemon[position]
         Glide.with(holder.itemView.context)
             .load(photo)
             .into(holder.imgPokemon)
         holder.tvName.text = name
         holder.tvNumber.text = number
-        holder.chipType.text = type
+        holder.chipType.text = typePokemon
 
         holder.itemView.setOnClickListener{ onItemClickCallback.onItemClicked(listPokemon[holder.adapterPosition])}
         holder.ivFavorite.setOnClickListener{
-            Log.d("SHARE BUTTON", "BUTTON SHARE CLICKED")
+            Log.d("FAVORITE BUTTON", "BUTTON SHARE CLICKED")
         }
+        holder.ivShare.setOnClickListener{
+            onItemShareClickCallback.onItemClicked("This is my favorite Pokemon, $name")
+        }
+
         holder.chipType.chipBackgroundColor = ColorStateList.valueOf(color)
     }
 
     interface OnItemClickCallback {
         fun onItemClicked(data: Pokemon)
+    }
+
+    interface OnItemShareClickCallback {
+        fun onItemClicked(data: String)
     }
 
 }

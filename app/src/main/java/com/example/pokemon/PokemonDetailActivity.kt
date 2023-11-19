@@ -1,5 +1,6 @@
 package com.example.pokemon
 
+import android.content.Intent
 import android.content.res.ColorStateList
 import android.os.Build
 import android.os.Bundle
@@ -24,6 +25,7 @@ class PokemonDetailActivity : AppCompatActivity() {
         val tvAbout: TextView = findViewById(R.id.tv_about)
         val tvDescription: TextView = findViewById(R.id.tv_description)
         val chipType: Chip = findViewById(R.id.chip_pokemon_type)
+        val imgShare: ImageView = findViewById(R.id.img_action_share)
 
         val pokemon = if(Build.VERSION.SDK_INT >= 33) {
             intent.getParcelableExtra<Pokemon>("pokemon", Pokemon::class.java)
@@ -36,6 +38,16 @@ class PokemonDetailActivity : AppCompatActivity() {
 
         imgBack.setOnClickListener {
             onBackPressed()
+        }
+
+        imgShare.setOnClickListener{
+            val intent = Intent().apply {
+                action = Intent.ACTION_SEND
+                putExtra(Intent.EXTRA_TEXT, "This is my favorite Pokemon, ${pokemon?.name ?: "Unknown"}")
+                type = "text/plain"
+            }
+            val shareIntent = Intent.createChooser(intent, null)
+            startActivity(shareIntent)
         }
 
         tvName.text = pokemon?.name ?: "Unknown"
