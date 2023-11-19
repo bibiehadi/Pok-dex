@@ -1,6 +1,7 @@
 package com.example.pokemon
 
 import android.content.res.ColorStateList
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,7 +18,7 @@ class ListPokemonAdapter(private val listPokemon: ArrayList<Pokemon>): RecyclerV
         val tvName: TextView = itemView.findViewById(R.id.tv_pokemon_name)
         val tvNumber: TextView = itemView.findViewById(R.id.tv_pokemon_number)
         val chipType: Chip = itemView.findViewById(R.id.chip_pokemon_type)
-//        val cardPokemon: ConstraintLayout = itemView.findViewById(R.id.card_pokemon)
+        val ivFavorite: ImageView = itemView.findViewById(R.id.iv_favorite)
     }
 
     private lateinit var onItemClickCallback: OnItemClickCallback
@@ -43,6 +44,9 @@ class ListPokemonAdapter(private val listPokemon: ArrayList<Pokemon>): RecyclerV
         holder.chipType.text = type
 
         holder.itemView.setOnClickListener{ onItemClickCallback.onItemClicked(listPokemon[holder.adapterPosition])}
+        holder.ivFavorite.setOnClickListener{
+            Log.d("SHARE BUTTON", "BUTTON SHARE CLICKED")
+        }
         holder.chipType.chipBackgroundColor = ColorStateList.valueOf(color)
     }
 

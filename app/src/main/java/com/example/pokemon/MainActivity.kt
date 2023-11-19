@@ -1,12 +1,12 @@
 package com.example.pokemon
 
+import android.content.Intent
+import android.os.Build
 import android.os.Bundle
-import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import android.widget.ImageView
 import android.widget.PopupMenu
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         imgMenu = findViewById(R.id.img_menu)
 
         rvPokemons = findViewById(R.id.rv_pokemons)
-//        rvPokemons.setHasFixedSize(true)
+        rvPokemons.setHasFixedSize(true)
 
         imgMenu.setOnClickListener {
             showMenu(it)
@@ -73,28 +73,27 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showSelectedPokemon(pokemon: Pokemon){
-        Toast.makeText(this, "Kamu memilih " + pokemon.name, Toast.LENGTH_SHORT).show()
+//        Toast.makeText(this, "Kamu memilih " + pokemon.name, Toast.LENGTH_SHORT).show()
+        val moveIntent = Intent(this@MainActivity, PokemonDetailActivity::class.java)
+        moveIntent.putExtra("pokemon", pokemon)
+        startActivity(moveIntent)
     }
 
-
-    private fun showPopup(view: View){
-        val popup = PopupMenu(this, view)
-        val inflater: MenuInflater = popup.menuInflater
-        inflater.inflate(R.menu.menu_main, popup.menu)
-        popup.show()
-    }
 
     private fun showMenu(view: View){
         PopupMenu(this, view).apply {
             setOnMenuItemClickListener(PopupMenu.OnMenuItemClickListener {
              onMenuItemClickListener(it)
             })
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                setForceShowIcon(true)
+            }
             inflate(R.menu.menu_main)
             show()
         }
     }
 
-     fun onMenuItemClickListener(item: MenuItem): Boolean {
+     private fun onMenuItemClickListener(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.action_list -> {
                 rvPokemons.layoutManager = LinearLayoutManager(this)
@@ -103,7 +102,8 @@ class MainActivity : AppCompatActivity() {
                 rvPokemons.layoutManager = GridLayoutManager(this,2)
             }
             R.id.action_profile -> {
-
+                val moveIntent = Intent(this@MainActivity, ProfileActivity::class.java)
+                startActivity(moveIntent)
             }
         }
         return super.onOptionsItemSelected(item)
