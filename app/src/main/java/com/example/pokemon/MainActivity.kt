@@ -7,6 +7,7 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.ImageView
 import android.widget.PopupMenu
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -40,29 +41,35 @@ class MainActivity : AppCompatActivity() {
         val dataPhoto = resources.getStringArray(R.array.pokemon_photo)
         val dataType = resources.getStringArray(R.array.pokemon_type)
         val dataNumber = resources.getStringArray(R.array.pokemon_number)
+        val dataTypeIcon = resources.getStringArray(R.array.pokemon_type_image)
+        val dataSkills = resources.getStringArray(R.array.pokemon_skills)
+        val dataWeakness = resources.getStringArray(R.array.pokemon_weakness)
         val listPokemon = ArrayList<Pokemon>()
         for(i in dataName.indices) {
             val color = when (dataType[i]) {
-                "fire" -> resources.getColor(R.color.fire)
-                "electric" -> resources.getColor(R.color.electric)
-                "psychic" -> resources.getColor(R.color.psychic)
-                "grass" -> resources.getColor(R.color.grass)
-                "normal" -> resources.getColor(R.color.steel)
-                "ice" -> resources.getColor(R.color.ice)
-                "fairy" -> resources.getColor(R.color.fairy)
-                "water" -> resources.getColor(R.color.water)
-                "bug" -> resources.getColor(R.color.grass2)
-                "ghost" -> resources.getColor(R.color.steel)
-                "steel" -> resources.getColor(R.color.steel)
-                else -> resources.getColor(R.color.ground)
+                "fire" -> resources.getColor(R.color.fire, theme)
+                "electric" -> resources.getColor(R.color.electric, theme)
+                "psychic" -> resources.getColor(R.color.psychic, theme)
+                "grass" -> resources.getColor(R.color.grass, theme)
+                "normal" -> resources.getColor(R.color.steel, theme)
+                "ice" -> resources.getColor(R.color.ice, theme)
+                "fairy" -> resources.getColor(R.color.fairy, theme)
+                "water" -> resources.getColor(R.color.water, theme)
+                "bug" -> resources.getColor(R.color.grass2, theme)
+                "ghost" -> resources.getColor(R.color.steel, theme)
+                "steel" -> resources.getColor(R.color.steel, theme)
+                else -> resources.getColor(R.color.ground, theme)
             }
             val pokemon = Pokemon(
                 dataName[i] ?: "",
                 dataNumber[i] ?: "0",
                 dataType[i] ?: "",
                 dataDescription[i] ?: "",
-                dataPhoto[i],
+                dataPhoto[i] ?: "",
                 color,
+                dataTypeIcon[i] ?: "",
+                dataSkills[i] ?: "",
+                dataWeakness[i] ?: "",
             )
             listPokemon.add(pokemon)
         }
@@ -82,7 +89,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showSelectedPokemon(pokemon: Pokemon){
-//        Toast.makeText(this, "Kamu memilih " + pokemon.name, Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "You are choose the " + pokemon.name, Toast.LENGTH_SHORT).show()
         val moveIntent = Intent(this@MainActivity, PokemonDetailActivity::class.java)
         moveIntent.putExtra("pokemon", pokemon)
         startActivity(moveIntent)

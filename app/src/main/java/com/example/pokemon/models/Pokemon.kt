@@ -11,4 +11,7 @@ data class Pokemon(
     val description: String,
     val photo: String,
     val color: Int,
+    val typeImage: String,
+    val skill: String,
+    val weakness: String,
 ) : Parcelable

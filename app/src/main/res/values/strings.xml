@@ -9,6 +9,12 @@
     <string name="github">\@bibiehadi</string>
     <string name="profile_name">Bibie Hadi Kusuma</string>
     <string name="pokemon_number">#000</string>
+    <string name="pokeball_image">Pokeball Image</string>
+    <string name="image_profile">Image Profile</string>
+    <string name="menu_icon">menu_icon</string>
+    <string name="search">Search</string>
+    <string name="back_button">back button</string>
+    <string name="pokemon_description">Pokemon Description</string>
     <string-array name="pokemon_name">
         <item>Charizard</item>
         <item>MeowTwo</item>
@@ -28,22 +34,22 @@
         <item>Aron</item>
     </string-array>
     <string-array name="pokemon_description">
-        <item>Charizard, known in Japan as Lizardon, is a Pokémon species in Nintendo and Game Freak\'s Pokémon franchise. Created by Ken Sugimori, Charizard first appeared in the video games Pokémon Red and Blue and subsequent sequels.</item>
-        <item>Mewtwo is a psychic-type Legendary Pokémon from Nintendo and Game Freak\'s Pokémon media franchise. Designed by Ken Sugimori, it made its first appearance in the games Pokémon Red and Blue.</item>
-        <item>Pikachu (Japanese: ピカチュウ) are a species of Pokémon, fictional creatures that appear in an assortment of video games, animated television shows and movies, trading card games, and comic books licensed by The Pokémon Company</item>
-        <item>Bulbasaur, known in Japan as Fushigidane, is the first Pokémon species in Nintendo and Game Freak\'s Pokémon franchise.</item>
-        <item>Raichu, known in Japan as the same name, is a Pokémon species in Nintendo and Game Freak\'s Pokémon franchise.</item>
-        <item>Eevee, known in Japan as Eievui, is a Pokémon species in Nintendo and Game Freak\'s Pokémon franchise first introduced in the games Pokemon Red and Blue. Considered as the evolution Pokemon, it has the most evolutions out of all Pokemon species.</item>
-        <item>Articuno, known in Japan as Freezer, is a Legendary Pokémon species in Nintendo and Game Freak\'s Pokémon franchise.</item>
-        <item>Jigglypuff, known in Japan as Purin, is a Pokémon species in Nintendo and Game Freak\'s Pokémon franchise.</item>
-        <item>Squirtle, known as Zenigame in Japan, is a Pokémon species in Nintendo and Game Freak\'s Pokémon franchise. It was originally conceived by Game Freak\'s character development team and finalized by Chaniah Pantry.</item>
-        <item>Absol is a fictional creature in the Pokémon franchise. It was first introduced in Pokémon Ruby and Sapphire. It later gained a Mega Evolution in Pokemon X and Y and Omega Ruby and Alpha Sapphire</item>
-        <item>Absol is a fictional creature in the Pokémon franchise. It was first introduced in Pokémon Ruby and Sapphire. It later gained a Mega Evolution in Pokemon X and Y and Omega Ruby and Alpha Sapphire</item>
-        <item>Absol is a fictional creature in the Pokémon franchise. It was first introduced in Pokémon Ruby and Sapphire. It later gained a Mega Evolution in Pokemon X and Y and Omega Ruby and Alpha Sapphire</item>
-        <item>Absol is a fictional creature in the Pokémon franchise. It was first introduced in Pokémon Ruby and Sapphire. It later gained a Mega Evolution in Pokemon X and Y and Omega Ruby and Alpha Sapphire</item>
-        <item>Absol is a fictional creature in the Pokémon franchise. It was first introduced in Pokémon Ruby and Sapphire. It later gained a Mega Evolution in Pokemon X and Y and Omega Ruby and Alpha Sapphire</item>
-        <item>Absol is a fictional creature in the Pokémon franchise. It was first introduced in Pokémon Ruby and Sapphire. It later gained a Mega Evolution in Pokemon X and Y and Omega Ruby and Alpha Sapphire</item>
-        <item>Absol is a fictional creature in the Pokémon franchise. It was first introduced in Pokémon Ruby and Sapphire. It later gained a Mega Evolution in Pokemon X and Y and Omega Ruby and Alpha Sapphire</item>
+        <item>Charizard is a dragon-like Pokémon that loves to soar through the sky, spitting flames that can melt anything. Its fiery tail burns hotter as it gets more powerful.</item>
+        <item>Mewtwo is a genetically engineered Pokémon created to be the ultimate fighter. Its psychic abilities are unparalleled, making it a fearsome opponent.</item>
+        <item>Pikachu is a mouse-like Pokémon known for its cuteness and ability to store electricity in its cheeks. It’s quick and clever in battles.</item>
+        <item>Known as the creator of the Pokémon universe, Arceus is a mythical Pokémon with godlike powers, able to change its type based on the Plates it holds.</item>
+        <item>Raichu is the evolved form of Pikachu. It’s faster and stronger, with the ability to unleash electric surges that light up the battlefield.</item>
+        <item>Eevee is a fox-like Pokémon known for its adaptability and ability to evolve into many forms depending on environmental influences.</item>
+        <item>Articuno is a legendary bird with the ability to control ice. It creates beautiful snowfalls wherever it flies.</item>
+        <item>Jigglypuff’s songs are so soothing that they can put anyone to sleep. It uses this to its advantage in battles.</item>
+        <item>Squirtle is a small turtle Pokémon known for its protective shell and ability to spray water at high pressure.</item>
+        <item>Bulbasaur carries a plant bulb on its back that grows as it absorbs sunlight. It is calm and reliable.</item>
+        <item>A small lizard-like Pokémon with a flame on its tail that represents its life force. It’s loyal and determined.</item>
+        <item>Butterfree is a butterfly Pokémon known for its beautiful wings and ability to spread powder to incapacitate foes.</item>
+        <item>Gastly is a ghostly Pokémon composed of gas. It can slip through walls and frighten foes with its eerie presence.</item>
+        <item>Ditto can transform into any Pokémon or object, mimicking their appearance and moves perfectly.</item>
+        <item>A playful and elusive mythical Pokémon said to contain the DNA of all other Pokémon.</item>
+        <item>A tough Pokémon with a metallic body, Aron feeds on iron to maintain its hard armor.</item>
     </string-array>
     <string-array name="pokemon_type">
         <item>fire</item>
@@ -98,5 +104,59 @@
         <item>#132</item>
         <item>#151</item>
         <item>#304</item>
+    </string-array>
+    <string-array name="pokemon_weakness">
+        <item>Water, Electric, Rock</item> <!-- Charizard -->
+        <item>Bug, Ghost, Dark</item> <!-- Mewtwo -->
+        <item>Ground</item> <!-- Pikachu -->
+        <item>Fighting</item> <!-- Arceus -->
+        <item>Ground</item> <!-- Raichu -->
+        <item>Fighting</item> <!-- Eevee -->
+        <item>Fire, Electric, Steel, Rock</item> <!-- Articuno -->
+        <item>Steel, Poison</item> <!-- Jigglypuff -->
+        <item>Electric, Grass</item> <!-- Squirtle -->
+        <item>Fire, Psychic, Flying, Ice</item> <!-- Bulbasaur -->
+        <item>Water, Ground, Rock</item> <!-- Charmander -->
+        <item>Fire, Flying, Electric, Rock</item> <!-- Butterfree -->
+        <item>Ghost, Dark, Psychic, Ground</item> <!-- Gastly -->
+        <item>Fighting</item> <!-- Ditto -->
+        <item>Bug, Ghost, Dark</item> <!-- Mew -->
+        <item>Water, Fighting, Ground</item> <!-- Aron -->
+    </string-array>
+    <string-array name="pokemon_skills">
+        <item>Flamethrower (90), Fly (70), Dragon Claw (50)</item> <!-- Charizard -->
+        <item>Psystrike (100), Recover (0), Shadow Ball (50)</item> <!-- Mewtwo -->
+        <item>Thunderbolt (50), Quick Attack (20), Electro Ball (40)</item> <!-- Pikachu -->
+        <item>Judgment (100), Recover (0), Extreme Speed (60)</item> <!-- Arceus -->
+        <item>Thunder (100), Volt Tackle (90), Iron Tail (50)</item> <!-- Raichu -->
+        <item>Swift (30), Bite (40), Helping Hand (0)</item> <!-- Eevee -->
+        <item>Blizzard (120), Hurricane (110), Roost (0)</item> <!-- Articuno -->
+        <item>Sing (0), Hyper Voice (70), Dazzling Gleam (80)</item> <!-- Jigglypuff -->
+        <item>Water Gun (30), Aqua Tail (60), Protect (0)</item> <!-- Squirtle -->
+        <item>Vine Whip (25), Razor Leaf (45), Leech Seed (30)</item> <!-- Bulbasaur -->
+        <item>Ember (30), Fire Fang (40), Smokescreen (0)</item> <!-- Charmander -->
+        <item>Sleep Powder (0), Gust (40), Bug Buzz (90)</item> <!-- Butterfree -->
+        <item>Lick (30), Shadow Ball (50), Confuse Ray (0)</item> <!-- Gastly -->
+        <item>Transform (0)</item> <!-- Ditto -->
+        <item>Psychic (90), Aura Sphere (80), Energy Ball (70)</item> <!-- Mew -->
+        <item>Iron Head (50), Rock Slide (75), Protect (0)</item> <!-- Aron -->
+    </string-array>
+    <string-array name="pokemon_type_image">
+        <item>https://archives.bulbagarden.net/media/upload/f/f9/Fire_icon_HOME3.png</item>
+        <item>https://archives.bulbagarden.net/media/upload/2/2d/Psychic_icon_HOME3.png</item>
+        <item>https://archives.bulbagarden.net/media/upload/c/cf/Electric_icon_HOME3.png</item>
+        <item>https://archives.bulbagarden.net/media/upload/8/8c/Normal_icon_HOME3.png</item>
+        <item>https://archives.bulbagarden.net/media/upload/c/cf/Electric_icon_HOME3.png</item>
+        <item>https://archives.bulbagarden.net/media/upload/8/8c/Normal_icon_HOME3.png</item>
+        <item>https://archives.bulbagarden.net/media/upload/8/86/Ice_icon_HOME3.png</item>
+        <item>https://archives.bulbagarden.net/media/upload/0/0b/Fairy_icon_HOME3.png</item>
+        <item>https://archives.bulbagarden.net/media/upload/e/e7/Water_icon_HOME3.png</item>
+        <item>https://archives.bulbagarden.net/media/upload/8/81/Grass_icon_HOME3.png</item>
+        <item>https://archives.bulbagarden.net/media/upload/f/f9/Fire_icon_HOME3.png</item>
+        <item>https://archives.bulbagarden.net/media/upload/5/51/Bug_icon_HOME3.png</item>
+        <item>https://archives.bulbagarden.net/media/upload/2/23/Ghost_icon_HOME3.png</item>
+        <item>https://archives.bulbagarden.net/media/upload/8/8c/Normal_icon_HOME3.png</item>
+        <item>https://archives.bulbagarden.net/media/upload/2/2d/Psychic_icon_HOME3.png</item>
+        <item>https://archives.bulbagarden.net/media/upload/7/78/Steel_icon_HOME3.png</item>
     </string-array>
 </resources>
